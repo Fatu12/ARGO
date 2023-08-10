@@ -23,16 +23,16 @@ class Node{
     
     // check if the current list does not have node 
     //if the list is empty, place the new node as the head
-    if(this.head == null){
-        return this.head
-    }
+    // if(this.head == null){
+    //     return this.head
+    // }
     // if the list is not empty, assign the head to be the next node to the new node 
     // pointing  to the head of this node
  
     newNode.next = this.head;
     // going to change the old head to new header 
     //assign the newNode  to be the new head of the list
-    this.head = newNode;
+    this.head = newNode
     return this;
  }
  /*
@@ -42,7 +42,7 @@ is empty, return null.
  */
   removeFront(){
     if(this.head == null){
-        return this.head
+      return null
     }
     // holding the current  values
     let removeNode =this.head
@@ -68,12 +68,14 @@ is empty, return null.
   }
 }
  let mySLL = new SLL();
+ mySLL.addFront(10)
+ mySLL.addFront(4)
+ mySLL.addFront(192)
+ mySLL.nodeValue()
+ console.log(mySLL)
  console.log(mySLL.nodeValue())
-   mySLL.addFront(10)
-   mySLL.addFront(4)
-   mySLL.addFront(192)
 // console.log(mySLL) 
- mySLL.removeFront(4)
+//  mySLL.removeFront(4)
  // console.log(mySLL.head.next) // this print the next node
 //   console.log(mySLL)
 
